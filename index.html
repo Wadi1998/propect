@@ -241,136 +241,301 @@
                 <span class="section-tag">Portfolio</span>
                 <h2 class="section-title">Nos réalisations récentes</h2>
                 <p class="section-description">
-                    Découvrez quelques-uns des projets que nous avons réalisés avec succès
+                    Découvrez des projets concrets que nous avons développés avec succès pour nos clients
                 </p>
             </div>
+            
+            <!-- Portfolio Filter -->
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tous les projets</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="saas">SaaS</button>
+            </div>
+
             <div class="portfolio-grid">
-                <div class="portfolio-item">
+                <!-- Project 1: TyrePro Manager -->
+                <div class="portfolio-item" data-category="web mobile saas">
                     <div class="portfolio-image">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
+                                <div class="portfolio-category">Web & Mobile • SaaS</div>
                                 <h3>TyrePro Manager</h3>
-                                <p>Application web & mobile pour garagiste de pneus</p>
+                                <p class="portfolio-description">
+                                    Solution complète de gestion pour garage de pneus : inventaire en temps réel, 
+                                    gestion clients, facturation automatisée et application mobile pour les techniciens.
+                                </p>
+                                <div class="portfolio-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Durée:</span>
+                                        <span class="detail-value">4 mois</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Équipe:</span>
+                                        <span class="detail-value">5 développeurs</span>
+                                    </div>
+                                </div>
                                 <div class="portfolio-tags">
                                     <span class="tag">Angular</span>
                                     <span class="tag">Flutter</span>
                                     <span class="tag">Spring Boot</span>
                                     <span class="tag">PostgreSQL</span>
                                 </div>
+                                <div class="portfolio-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">+40%</span>
+                                        <span class="metric-label">Productivité</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">-30%</span>
+                                        <span class="metric-label">Erreurs</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="portfolio-placeholder portfolio-1">
                             <div class="placeholder-content">
                                 <div class="placeholder-icon">🚗</div>
+                                <div class="placeholder-title">TyrePro Manager</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item">
+                <!-- Project 2: MediCare Connect -->
+                <div class="portfolio-item" data-category="web saas">
                     <div class="portfolio-image">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
+                                <div class="portfolio-category">Web App • SaaS</div>
                                 <h3>MediCare Connect</h3>
-                                <p>Plateforme de télémédecine et gestion de rendez-vous</p>
+                                <p class="portfolio-description">
+                                    Plateforme de télémédecine sécurisée avec visioconférence HD, gestion de dossiers médicaux 
+                                    électroniques, prescription en ligne et paiement intégré.
+                                </p>
+                                <div class="portfolio-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Durée:</span>
+                                        <span class="detail-value">6 mois</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Équipe:</span>
+                                        <span class="detail-value">7 développeurs</span>
+                                    </div>
+                                </div>
                                 <div class="portfolio-tags">
                                     <span class="tag">React</span>
                                     <span class="tag">Node.js</span>
                                     <span class="tag">WebRTC</span>
                                     <span class="tag">MongoDB</span>
                                 </div>
+                                <div class="portfolio-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">5000+</span>
+                                        <span class="metric-label">Utilisateurs</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">99.9%</span>
+                                        <span class="metric-label">Uptime</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="portfolio-placeholder portfolio-2">
                             <div class="placeholder-content">
                                 <div class="placeholder-icon">⚕️</div>
+                                <div class="placeholder-title">MediCare Connect</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item">
+                <!-- Project 3: EduLearn Pro -->
+                <div class="portfolio-item" data-category="web saas">
                     <div class="portfolio-image">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
+                                <div class="portfolio-category">Web App • SaaS</div>
                                 <h3>EduLearn Pro</h3>
-                                <p>Application e-learning avec suivi personnalisé</p>
+                                <p class="portfolio-description">
+                                    Plateforme e-learning complète avec cours vidéo, quiz interactifs, suivi personnalisé 
+                                    des progrès et certificats automatiques.
+                                </p>
+                                <div class="portfolio-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Durée:</span>
+                                        <span class="detail-value">5 mois</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Équipe:</span>
+                                        <span class="detail-value">6 développeurs</span>
+                                    </div>
+                                </div>
                                 <div class="portfolio-tags">
                                     <span class="tag">Vue.js</span>
                                     <span class="tag">Laravel</span>
                                     <span class="tag">MySQL</span>
                                     <span class="tag">AWS</span>
                                 </div>
+                                <div class="portfolio-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">10K+</span>
+                                        <span class="metric-label">Étudiants</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">95%</span>
+                                        <span class="metric-label">Satisfaction</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="portfolio-placeholder portfolio-3">
                             <div class="placeholder-content">
                                 <div class="placeholder-icon">📚</div>
+                                <div class="placeholder-title">EduLearn Pro</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item">
+                <!-- Project 4: ShopFlow Manager -->
+                <div class="portfolio-item" data-category="web saas">
                     <div class="portfolio-image">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
+                                <div class="portfolio-category">Web App • SaaS</div>
                                 <h3>ShopFlow Manager</h3>
-                                <p>Solution SaaS de gestion multi-boutiques</p>
+                                <p class="portfolio-description">
+                                    Solution SaaS multi-boutiques avec gestion centralisée des stocks, commandes, 
+                                    analytics en temps réel et synchronisation automatique.
+                                </p>
+                                <div class="portfolio-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Durée:</span>
+                                        <span class="detail-value">5 mois</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Équipe:</span>
+                                        <span class="detail-value">6 développeurs</span>
+                                    </div>
+                                </div>
                                 <div class="portfolio-tags">
                                     <span class="tag">React</span>
                                     <span class="tag">Python</span>
                                     <span class="tag">Django</span>
                                     <span class="tag">Redis</span>
                                 </div>
+                                <div class="portfolio-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">200+</span>
+                                        <span class="metric-label">Boutiques</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">-50%</span>
+                                        <span class="metric-label">Temps gestion</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="portfolio-placeholder portfolio-4">
                             <div class="placeholder-content">
                                 <div class="placeholder-icon">🛒</div>
+                                <div class="placeholder-title">ShopFlow Manager</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item">
+                <!-- Project 5: FitTrack Mobile -->
+                <div class="portfolio-item" data-category="mobile">
                     <div class="portfolio-image">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
+                                <div class="portfolio-category">Mobile App</div>
                                 <h3>FitTrack Mobile</h3>
-                                <p>Application fitness avec coach virtuel IA</p>
+                                <p class="portfolio-description">
+                                    Application fitness avec coach virtuel IA, plans d'entraînement personnalisés, 
+                                    suivi nutrition et intégration wearables (Apple Watch, Fitbit).
+                                </p>
+                                <div class="portfolio-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Durée:</span>
+                                        <span class="detail-value">4 mois</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Équipe:</span>
+                                        <span class="detail-value">4 développeurs</span>
+                                    </div>
+                                </div>
                                 <div class="portfolio-tags">
                                     <span class="tag">React Native</span>
                                     <span class="tag">TensorFlow</span>
                                     <span class="tag">Firebase</span>
+                                </div>
+                                <div class="portfolio-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">50K+</span>
+                                        <span class="metric-label">Téléchargements</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">4.8/5</span>
+                                        <span class="metric-label">Note stores</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="portfolio-placeholder portfolio-5">
                             <div class="placeholder-content">
                                 <div class="placeholder-icon">💪</div>
+                                <div class="placeholder-title">FitTrack Mobile</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item">
+                <!-- Project 6: SmartHome Hub -->
+                <div class="portfolio-item" data-category="web mobile">
                     <div class="portfolio-image">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
+                                <div class="portfolio-category">IoT • Web & Mobile</div>
                                 <h3>SmartHome Hub</h3>
-                                <p>Application IoT pour maison connectée</p>
+                                <p class="portfolio-description">
+                                    Hub centralisé pour maison connectée : contrôle lumières, thermostats, caméras, 
+                                    automatisations intelligentes et app mobile dédiée.
+                                </p>
+                                <div class="portfolio-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Durée:</span>
+                                        <span class="detail-value">6 mois</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Équipe:</span>
+                                        <span class="detail-value">5 développeurs</span>
+                                    </div>
+                                </div>
                                 <div class="portfolio-tags">
                                     <span class="tag">Next.js</span>
                                     <span class="tag">MQTT</span>
                                     <span class="tag">Raspberry Pi</span>
                                     <span class="tag">Docker</span>
                                 </div>
+                                <div class="portfolio-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">100+</span>
+                                        <span class="metric-label">Appareils supportés</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">-25%</span>
+                                        <span class="metric-label">Énergie</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="portfolio-placeholder portfolio-6">
                             <div class="placeholder-content">
                                 <div class="placeholder-icon">🏡</div>
+                                <div class="placeholder-title">SmartHome Hub</div>
                             </div>
                         </div>
                     </div>

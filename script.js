@@ -312,16 +312,70 @@ document.querySelectorAll('.stat').forEach(stat => {
 });
 
 // ================================
+// PORTFOLIO FILTER FUNCTIONALITY
+// ================================
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        // Get filter value
+        const filterValue = button.getAttribute('data-filter');
+        
+        // Filter portfolio items
+        portfolioItems.forEach(item => {
+            const categories = item.getAttribute('data-category');
+            
+            if (filterValue === 'all' || categories.includes(filterValue)) {
+                item.classList.remove('hidden');
+                // Stagger animation
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 100);
+            } else {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    item.classList.add('hidden');
+                }, 300);
+            }
+        });
+    });
+});
+
+// Initialize portfolio items with animation
+portfolioItems.forEach((item, index) => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateY(20px)';
+    setTimeout(() => {
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+    }, index * 100);
+});
+
+// ================================
 // PORTFOLIO HOVER EFFECTS
 // ================================
 
 document.querySelectorAll('.portfolio-item').forEach(item => {
     item.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-5px)';
+        if (!this.classList.contains('hidden')) {
+            this.style.transform = 'translateY(-5px)';
+        }
     });
     
     item.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
+        if (!this.classList.contains('hidden')) {
+            this.style.transform = 'translateY(0)';
+        }
     });
 });
 
